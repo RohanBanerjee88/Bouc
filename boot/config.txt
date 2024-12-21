@@ -1,0 +1,23 @@
+# Specify the kernel file
+kernel=kernel.img
+
+# Enable 64-bit mode (ARMv8)
+arm_64bit=1
+
+# Disable the Raspberry Pi splash screen for a cleaner boot
+disable_splash=1
+
+# Allocate minimal memory to the GPU, as this is a bare-metal RTOS
+gpu_mem=16
+
+# Enable UART for debugging
+enable_uart=1
+
+# Disable Bluetooth (optional, if not needed for your RTOS)
+dtoverlay=disable-bt
+
+# Set the maximum clock frequency (optional, for performance)
+arm_freq=1500
+
+# Specify custom boot delay in milliseconds (set to 0 for no delay)
+boot_delay=0
